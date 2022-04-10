@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classes associated with form elements</title>
+</head>
+<style> 
+.blue:focus{
+    background-color: yellow;
+    color: blue;
+}
+ input:enabled{
+     color:black;
+     border:3px solid limegreen;
+      
+ }
+ input:disabled{
+     color: tomato;
+ }
+ #control+label{
+     color:gray;
+     font-style: italic;
+ }
+ #control:checked +label{
+     color:limegreen;
+     font-style: normal;
+ }
+
+</style>
+<body>
+    <form action="a">
+    <input type="checkbox" id="control" name="time 2 code">
+    <label for="control"> Kabul ediyorum</label>
+    <label for="box1"> ilk alanımız</label>  
+    <input type="text" id="box1" value="test">
+    <br/> 
+    <label for="box2"> ikinci alanımız</label>  
+    <input type="text" id="box2" value="Örnek" disabled>
+    </form>
+</body>
+</html>

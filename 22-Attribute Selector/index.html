@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style> 
+    a[target="_blank"] {
+        color: yellow;
+    }
+    a[class]{
+        color: red;
+    }
+    /* başında link olanları alır */
+    a[title~="link"]{
+        color:black;
+    }
+    a[title$="link"]{
+        color: aquamarine;
+    }
+    a[title*="link"]{
+
+        color: bisque;
+    }
+
+    
+    
+    </style>
+</head>
+<body>
+    <a href="a">Link1 </a>
+    <a href="a" target="_blank">Link2  </a> 
+    <a href="a" target="_self" class="sinif">Link3 </a>
+
+    
+</body>
+</html>

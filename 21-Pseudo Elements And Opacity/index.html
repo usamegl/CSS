@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements and Opacity</title>
+    <style>
+        /* secici::sozde-etiket{ 
+
+        } */
+        p::first-line{
+            color: aqua;
+        }
+        /* inline etikete uygulanmaz */
+
+        p::first-letter{
+            color: red;
+            font-size: 24px;
+        }
+        p::before{
+            content: url("gem.png");
+        }
+        ::marker{
+            color:aqua;
+            font-size: 23px;
+        }
+
+        ::selection{
+            color:green;
+            background-color: blue;
+        }
+        img{
+            opacity: 0.5;
+        }
+
+
+
+    </style> 
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde neque eius magnam corporis, maiores perspiciatis! Sint perferendis officia, beatae maiores voluptatibus quam repellendus officiis necessitatibus blanditiis provident, nihil voluptate animi veniam architecto vero magni vitae id natus, eligendi inventore. Tempora illo ad itaque, provident veniam est rem voluptate, aut commodi expedita debitis sapiente quia iusto ex porro labore corporis sed tempore sint numquam asperiores explicabo magni ipsum minus. Repudiandae officia voluptate accusantium quos perspiciatis doloribus iusto ad, libero placeat. Eum nostrum tempora, maxime, iste nam illum molestiae error alias fuga expedita vel doloribus, facilis quisquam repellendus eius blanditiis voluptatibus.</p>
+    <br>
+    <ul> 
+        <li>1</li>
+        <li>2</li>
+
+        <li>3</li>
+
+    </ul>
+    <img src="gem.png"/>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+        Combinators(Birleştiriciler)
+        Torun seçici- descendant selector(space)
+        çocuk seçici - child selector(>)
+        komşu kardeş seçici- adjacent sibling selector (+)
+        genel kardeş seçici - general sibling selector (~)
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+
+    <style>
+        /* div boxtan sonra gelen bir etiketi seçip o renk yap */
+        .box > p{
+            background-color: lightgreen;
+
+        }
+        /*boxtan sonra gelen ilk etiketi o renk yapar */
+        .box +p {
+            background-color: yellow;
+        }
+        /* bu boxtan sonra gelen tüm etiketleri o renk yapar*/
+        .box ~p {
+            background-color: aqua;
+
+        }
+
+
+
+
+    </style> 
+</head>
+<body>
+    <div class="box"> 
+        <p> Lorem ipsum dolor sit amet.</p>
+        <p> Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+
+    <p> Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor sit amet.</p>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute , Relative , Sticky, Fixed</title>
+</head>
+<style> 
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    /* relative dediğimizde left, top ,right kullanabiliriz. Varsayılan durumunu değiştirebiliriz    */
+    position: relative;
+    left: 20px;
+
+}
+
+.box2{
+    width: 100px;
+    height: 20p x;
+    background-color: blue;
+    /* box2 box 3 ün üstüne binmiş oluyor, olduğu yerde üst konum açar ve atasına bakar . */
+    position: absolute ;
+    left:400px
+}
+
+.box3{
+    /*z-index değeri yüksek olan etiket yukarıda gözükecektir */
+    /*z-index: 1;*/
+    width: 100px;
+    height: 100px;
+    background-color:blueviolet;
+
+
+}
+
+.fixed{
+    /* fixed, olduğu yer sabitler. */
+    position: fixed;
+    width: 300px;
+    border: 3px solid green;
+    right: 0;
+    top: 0;
+    background-color: yellow ;
+
+}
+.sticky {
+    /* ekranın dışına çıkıyorsa sabit kal , içindeyken relativedir.r */ 
+    background-color: yellowgreen;
+    position: sticky;
+    padding: 5px;
+    border:2px solid green
+}
+</style>
+
+
+
+<body>
+    <div class="container"> 
+        <div class="box1">Kutu 1 </div>
+        <div class="box2"> Kutu2 </div>
+        <div class="box3"> Kutu3 </div>
+    </div>
+
+        <div class="fixed">Bu bir fixed örneğidir> </div>
+
+        <p style="padding: bottom 2000px;"> Lorem ipsum dolor sit amet consectetur adipisicing.Repeller repecusandae necessitatibus.</p>
+<div class="sticky"> Burası stick alani</div>
+    
+</body>
+</html>

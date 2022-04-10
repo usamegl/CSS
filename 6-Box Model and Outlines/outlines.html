@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlines</title>
+</head>
+<style>
+
+/* outlines üst üste çakışabilir ama border çakışmaz style kullanılması zorunludur. */
+.kutu1{
+    outline:5px solid red ;
+    outline-style: dotted;
+    outline-width: 5px;
+    outline-style: dashed;
+    outline:5px dashed yellow;
+    background: coral;
+    border:5px solid black;
+    margin:30px;
+    outline-offset: 10px;
+
+}
+
+
+</style>
+
+
+<body>
+
+
+    <div class="kutu1">
+        Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı
+        oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri
+        endüstri standardı sahte metinler olarak kullanılmıştır.
+      </div>
+
+
+      
+   
+    
+</body>
+</html>

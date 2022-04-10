@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display And Inline block</title>
+    <style>  
+    
+        /* display= görünüm */
+        /*display: none;*/
+        
+    
+    li{
+        display: inline;
+
+    
+    }
+    span.a{
+        display: inline;
+        background-color: lightgreen;
+
+        border:2px limegreen;
+        padding: 5px;
+        margin: 2px;
+        width: 500px;
+        height: 100px;
+        margin: 300px;
+
+    }
+
+    span.b{
+        background-color: yellow;
+        display: block;
+
+    }
+    span.c{
+        background-color:black ;
+        display: inline-block;
+        /* inline block verdiğimiz değerlere göre bloğu şekillendirir.*/
+        background-color: aqua;
+        border:2px solid salmon;
+        width: 200px;
+        height: 100px;
+    }
+    
+    
+    </style>
+</head>
+<body>
+
+    
+    <!-- Block etiketleri div,p,li bulundukları tüm satırı kapsırlar | inline etiketleri a,span -->
+    <div class="block"> Birinci block</div>
+
+    <ul> 
+        <li> Anasayfa</li>
+        <li>Hakkımızda</li>
+        <li>Ürünlerimiz</li>
+
+    </ul>
+
+
+    
+
+
+
+    </ul>
+
+    <p>
+        Lorem ipsum dolor <span class="a"> sit </span> <span class="a"> amet </span> accusantium aspernatur corrupti.
+        </p>
+        <p>
+            Lorem ipsum dolor <span class="b"> sit </span> <span class="b"> amet </span> accusantium aspernatur corrupti.
+            </p>
+
+            <p>
+                Lorem ipsum dolor <span class="c"> sit </span> <span class="c"> amet </span> accusantium aspernatur corrupti.
+                </p>
+</body>
+</html>
